@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agenda - Practica 2</string>
+    <string name="phone_number_en">Phone number</string>
+    <string name="name_en">Name</string>
+    <string name="email_en">Email</string>
+    <string name="notes_en">Notes</string>
+    <string name="alias_en">Alias</string>
+    <string name="save_en">Save</string>
+    <string name="contact_image_en">Contact image</string>
+    <string name="contact_name_en">Contact name</string>
+    <string name="add_new_contact_en">Add new contact</string>
+    <string name="empty_recyclerview_message_es">Woah there! It seems that there are no contacts to show… Go on and add some!</string>
+</resources>

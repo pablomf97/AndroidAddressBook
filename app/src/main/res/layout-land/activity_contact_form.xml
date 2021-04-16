@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#616C72"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/contact_form_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:elevation="4dp"
+            android:minHeight="?actionBarSize"
+            app:menu="@menu/contact_form_save"
+            app:subtitleTextColor="@color/white"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/contact_form_tag"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="35sp" />
+
+            <!-- Name field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_input_layout_name"
+                style="@style/OutlinedBoxCustomTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_en"
+                app:boxStrokeErrorColor="@android:color/holo_red_light"
+                app:errorIconTint="@android:color/holo_red_light"
+                app:errorTextColor="@android:color/holo_red_light">
+
+                <EditText
+                    android:id="@+id/contact_form_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/person_icon"
+                    android:drawablePadding="15dp"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Alias field -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedBoxCustomTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/alias_en">
+
+                <EditText
+                    android:id="@+id/contact_form_alias"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/star_icon"
+                    android:drawablePadding="15dp"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_input_layout_phone"
+                style="@style/OutlinedBoxCustomTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number_en"
+                app:boxStrokeErrorColor="@android:color/holo_red_light"
+                app:errorIconTint="@android:color/holo_red_light"
+                app:errorTextColor="@android:color/holo_red_light">
+
+                <EditText
+                    android:id="@+id/contact_form_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/phone_icon"
+                    android:drawablePadding="15dp"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_input_layout_email"
+                style="@style/OutlinedBoxCustomTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_en"
+                app:boxStrokeErrorColor="@android:color/holo_red_light"
+                app:errorIconTint="@android:color/holo_red_light"
+                app:errorTextColor="@android:color/holo_red_light">
+
+                <EditText
+                    android:id="@+id/contact_form_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/at_icon"
+                    android:drawablePadding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Notes field -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedBoxCustomTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/notes_en">
+
+                <EditText
+                    android:id="@+id/contact_form_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/info_icon"
+                    android:drawablePadding="15dp"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/contact_details_call"
+            android:title="Call" />
+
+        <item
+            android:id="@+id/contact_details_message"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/contact_details_export"
+            android:title="Export contact" />
+</menu>
